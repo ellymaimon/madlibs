@@ -25,6 +25,7 @@ namespace MadLibs.Controllers
             myStory.SetFamily1(Request.Query["family1"]);
             myStory.SetFamily2(Request.Query["family2"]);
             myStory.SetPlace(Request.Query["place"]);
+            myStory.IsMale(Request.Query["gender"]);
             return View(myStory);
         }
 

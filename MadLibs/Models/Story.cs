@@ -15,6 +15,9 @@ namespace MadLibs.Models
         private string _family1;
         private string _family2;
         private string _place;
+        private string _gender;
+        private string _gender2;
+        private string _royalty;
 
         public void SetName(string name)
         {
@@ -114,6 +117,37 @@ namespace MadLibs.Models
         public string GetPlace()
         {
             return _place;
+        }
+
+        public void IsMale(string gender)
+        {
+            if (gender == "male")
+            {
+                _gender = "he";
+                _gender2 = "his";
+                _royalty = "Prince";
+            }
+            else
+            {
+                _gender = "she";
+                _gender2 = "her";
+                _royalty = "Princess";
+            }
+        }
+
+        public string GetGender()
+        {
+            return _gender;
+        }
+
+        public string GetGender2()
+        {
+            return _gender2;
+        }
+
+        public string GetRoyalty()
+        {
+            return _royalty;
         }
     }
 }
