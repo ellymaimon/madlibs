@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace MadLibs
+namespace MadLibs.Models
 {
     public class Story
     {
